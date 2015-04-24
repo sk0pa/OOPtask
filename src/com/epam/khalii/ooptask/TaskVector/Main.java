@@ -4,7 +4,6 @@ package com.epam.khalii.ooptask.TaskVector;
  * Created by Anhelina_Khalii on 24.04.2015.
  */
 public class Main {
-    //Заполнить контейнер, распечатать, отсортировать, распечатать.
     public static void main(String[] args) {
         Item[] it = new Item[]{new Cup(50.23, "Ruby", 600, "red"),
                 new Cup(20.0, "Night", 250, "black"),
