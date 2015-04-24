@@ -10,10 +10,10 @@ public class Customer {
     private String firstName;
     private String fatherName;
     private String address;
-    private int creditCard;
-    private int bankNumber;
+    private long creditCard;
+    private long bankNumber;
 
-    public Customer(String lastName, String firstName, String fatherName, String address, int creditCard, int bankNumber) {
+    public Customer(String lastName, String firstName, String fatherName, String address, long creditCard, long bankNumber) {
         this.id=iterator++;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -83,7 +83,7 @@ public class Customer {
         this.address = address;
     }
 
-    public int getCreditCard() {
+    public long getCreditCard() {
         return creditCard;
     }
 
@@ -91,7 +91,7 @@ public class Customer {
         this.creditCard = creditCard;
     }
 
-    public int getBankNumber() {
+    public long getBankNumber() {
         return bankNumber;
     }
 
@@ -109,8 +109,11 @@ public class Customer {
                 ", address='" + address + '\'' +
                 ", creditCard=" + creditCard +
                 ", bankNumber=" + bankNumber +
-                '}';
+                "\n}";
     }
 
+    public int compareToByLastName(Customer anotherCustomer) {
+        return this.getLastName().compareTo(anotherCustomer.getLastName());
+    }
 
 }
