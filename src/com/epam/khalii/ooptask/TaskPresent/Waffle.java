@@ -36,7 +36,7 @@ public class Waffle extends Sweet {
         return "Waffle{" +
                 "sugarPart=" + sugarPart +
                 ", weight=" + weight +
-                "filling='" + filling + '\'' +
+                " gr, filling='" + filling + '\'' +
                 '}';
     }
 }

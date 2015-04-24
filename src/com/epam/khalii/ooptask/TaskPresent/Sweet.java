@@ -41,6 +41,6 @@ abstract public class Sweet {
         return "Sweet{" +
                 "sugarPart=" + sugarPart +
                 ", weight=" + weight +
-                '}';
+                " gr}";
     }
 }

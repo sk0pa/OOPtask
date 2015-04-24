@@ -31,7 +31,6 @@ public class ChocolateCandy extends Candy {
     }
 
     public ChocolateCandy(String chocolateColor) {
-        super();
         this.setChocolateColor(chocolateColor);
     }
 
@@ -44,8 +43,8 @@ public class ChocolateCandy extends Candy {
         return "ChocolateCandy{" +
                 "sugarPart=" + sugarPart +
                 ", weight=" + weight +
-                "glaze=" + glaze +
-                "chocolateColor='" + chocolateColor + '\'' +
+                " gr, glaze=" + glaze +
+                ", chocolate color='" + chocolateColor + '\'' +
                 '}';
     }
 }

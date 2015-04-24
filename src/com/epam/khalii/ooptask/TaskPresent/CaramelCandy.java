@@ -42,13 +42,11 @@ public class CaramelCandy extends Candy {
     }
 
     public CaramelCandy(String color, String filling) {
-        super();
         this.color = color;
         this.filling = filling;
     }
 
     public CaramelCandy(){
-        super();
         this.color = "white";
         this.filling = "fruits";
     }
@@ -58,8 +56,8 @@ public class CaramelCandy extends Candy {
         return "CaramelCandy{" +
                 "sugarPart=" + sugarPart +
                 ", weight=" + weight +
-                "glaze=" + glaze +
-                "color='" + color + '\'' +
+                " gr, glaze=" + glaze +
+                ", color='" + color + '\'' +
                 ", filling='" + filling + '\'' +
                 '}';
     }

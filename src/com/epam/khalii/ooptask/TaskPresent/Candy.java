@@ -25,12 +25,10 @@ public class Candy extends Sweet {
     }
 
     public Candy(boolean glaze) {
-        super();
         this.glaze = glaze;
     }
 
     public Candy() {
-        super();
         this.glaze=false;
     }
 
@@ -39,7 +37,7 @@ public class Candy extends Sweet {
         return "Candy{" +
                 "sugarPart=" + sugarPart +
                 ", weight=" + weight +
-                "glaze=" + glaze +
+                " gr, glaze=" + glaze +
                 '}';
     }
 }
