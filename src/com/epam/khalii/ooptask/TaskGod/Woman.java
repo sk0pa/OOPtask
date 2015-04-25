@@ -7,10 +7,10 @@ import java.util.Scanner;
  * Created by Anhelina_Khalii on 24.04.2015.
  */
 public class Woman extends Human {
-    final protected boolean gender = false;
 
     public Woman(String lastName, String firstName, float height, float weight) {
         super(lastName, firstName, height, weight);
+        this.gender = false;
     }
 
     public Human giveBirth(Man partner){
@@ -31,7 +31,7 @@ public class Woman extends Human {
         String ln = partner.getLastName();
         String gend = "girl";
         if(s) gend = "boy";
-        System.out.println("Please, type child name. It's a"+gend+"!");
+        System.out.println("Please, type child name. It's a "+gend+"!");
         String fn = "Vasya";
         Scanner sc = new Scanner(System.in);
         if (sc.hasNext()) {

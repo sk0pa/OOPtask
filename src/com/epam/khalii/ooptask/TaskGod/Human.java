@@ -112,4 +112,15 @@ abstract public class Human {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "gender=" + gender +
+                ", lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", height=" + height +
+                ", weight=" + weight +
+                '}';
+    }
 }
