@@ -27,16 +27,16 @@ public class Main {
             partner2 = new Woman(ln2, fn2, h2, w2);
         }
         Human ch = Human.matchmaker(partner1, partner2);
-        if(ch==null) {System.out.println("Sorry... They don't like each other.");}
-        else ch.toString();
+        if(ch==null) {
+            System.out.println("Sorry... They don't like each other.");
+        } else System.out.println(ch.toString());
     }
 
     public static void main(String[] args) {
         String fn1 = "", fn2= "", ln1="", ln2="";
         Float h1=0f, h2=0f, w1=0f, w2=0f;
         Boolean g2=false, g1=false;
-        try {
-            BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        try (BufferedReader in = new BufferedReader(new InputStreamReader(System.in))){
             System.out.println("Please, type gender for first partner (false for woman, true for man)");
             String gender1 = in.readLine();
             g1 = Boolean.parseBoolean(gender1);
@@ -69,4 +69,5 @@ public class Main {
         catch (IOException e) {
             System.out.println("Problem with input data");
         }
-}}
+    }
+}

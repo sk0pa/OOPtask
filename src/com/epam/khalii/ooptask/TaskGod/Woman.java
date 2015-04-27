@@ -21,12 +21,12 @@ public class Woman extends Human {
         float h;
         float w;
         if(s){
-            h = partner.getHeight()+(this.getHeight()-partner.getHeight());
-            w = partner.getWeight()+(this.getWeight()-partner.getWeight());
+            h = (float) (partner.getHeight()+0.1*(this.getHeight()-partner.getHeight()));
+            w = (float) (partner.getWeight()+0.1*(this.getWeight()-partner.getWeight()));
         }
         else{
-            h = this.getHeight()+(partner.getHeight()-this.getHeight());
-            w = this.getWeight()+(partner.getWeight()-this.getWeight());
+            h = (float) (this.getHeight()+0.1*(partner.getHeight()-this.getHeight()));
+            w = (float) (this.getWeight()+0.1*(partner.getWeight()-this.getWeight()));
         }
         String ln = partner.getLastName();
         String gend = "girl";
