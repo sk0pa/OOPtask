@@ -12,14 +12,6 @@ abstract public class Human {
     protected float height;
     protected float weight;
 
-    public Human(boolean gender, String lastName, String firstName, float height, float weight) {
-        this.gender = gender;
-        this.lastName = lastName;
-        this.firstName = firstName;
-        this.height = height;
-        this.weight = weight;
-    }
-
     public Human(String lastName, String firstName, float height, float weight) {
         this.lastName = lastName;
         this.firstName = firstName;
